@@ -143,5 +143,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@Borda](https://github.com/Borda/)
 * [@Tobias-Fischer](https://github.com/Tobias-Fischer/)
+* [@carmocca](https://github.com/carmocca/)
 
