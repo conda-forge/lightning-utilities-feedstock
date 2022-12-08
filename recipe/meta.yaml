@@ -1,5 +1,5 @@
 {% set name = "lightning-utilities" %}
-{% set version = "0.4.2" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lightning-utilities-{{ version }}.tar.gz
-  sha256: dc6696ab180117f7e97b5488dac1d77765ab891022f7521a97a39e10d362bdb8
+  sha256: d769ab9b76ebdee3243d1051d509aafee57d7947734ddc22977deef8a6427f2f
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -20,6 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.8
+    - fire >=0.4
 
 test:
   imports:
