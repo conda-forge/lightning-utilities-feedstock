@@ -11,7 +11,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - packaging >=20.0
+    - packaging >=17.1
     - typing_extensions
 
 test:
