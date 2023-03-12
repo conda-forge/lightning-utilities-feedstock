@@ -1,11 +1,11 @@
-About lightning-utilities
-=========================
+About lightning-utilities-feedstock
+===================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lightning-utilities-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Lightning-AI/utilities
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lightning-utilities-feedstock/blob/main/LICENSE.txt)
 
 Summary: PyTorch Lightning Sample project.
 
