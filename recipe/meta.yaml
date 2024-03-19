@@ -1,5 +1,5 @@
 {% set name = "lightning-utilities" %}
-{% set version = "0.10.1" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lightning-utilities-{{ version }}.tar.gz
-  sha256: 362755023dcf93b8fa519bc002ae41794943a3ffbc5318e40804d36aa14bf1fd
+  sha256: dd704795785ceba1e0cd60ba3a9b0553c7902ec9efc1578a74e893a291416e62
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
