@@ -23,6 +23,7 @@ requirements:
     - python >=3.8
     - packaging >=17.1
     - typing_extensions
+    - setuptools
 
 test:
   imports:
