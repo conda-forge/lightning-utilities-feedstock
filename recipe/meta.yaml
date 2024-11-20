@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python 3.8
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - packaging >=17.1
     - typing_extensions
     - setuptools
