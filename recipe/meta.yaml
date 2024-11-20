@@ -1,13 +1,13 @@
 {% set name = "lightning-utilities" %}
-{% set version = "0.11.8" %}
+{% set version = "0.11.9" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 8dfbdc6c52f9847efc948dc462ab8bebb4f4e9a43bd69c82c1b1da484dac20e6
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: f5052b81344cc2684aa9afd74b7ce8819a8f49a858184ec04548a5a109dfd053
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - packaging >=17.1
     - typing_extensions
     - setuptools
@@ -32,6 +32,8 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
+
 
 about:
   home: https://github.com/Lightning-AI/utilities
